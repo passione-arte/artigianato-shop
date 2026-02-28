@@ -32,8 +32,10 @@
     </footer>
 
     <script>
-      // Modalità Google Sheet
-      const SHEET_ID = '1uftev9VfpdMT2thbdJ2YNXXg_0jRTwGC_lkBSFjUY9w';
+      <!-- carichiamo configurazione esterna per l'ID del foglio -->
+      <script src="config.js"></script>
+      <!-- Modalità Google Sheet -->
+      <!-- SHEET_ID è definito in config.js tramite GitHub Actions -->
       const PRODUCTS_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&sheet=inventario`;
 
       function getQueryParam(name){
